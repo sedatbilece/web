@@ -1,0 +1,146 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(209, 208, 208)
+    
+}
+
+
+#bas{
+    z-index: 1;
+    position: fixed;
+    background-color:#2e3d52 ;
+    height:80px;
+   
+    width: 100%;
+}
+#logo{
+    
+    color: honeydew;
+    font-size: 40px;
+    margin:20px;
+    top:10px;
+    
+}
+#navbar{
+    position: relative;
+    float: right;
+    top: -80px;
+    margin-right: 5%;
+
+
+}
+.tıkla{
+   padding:16px 40px;
+   display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+   
+    
+   
+}
+.navbarli{
+    display: inline-block;
+    text-align: center;
+  
+}
+.tıkla:hover{
+    color:yellow;
+    transition: ease 0.5s;
+    background-color: teal;
+    border-radius: 10px;
+}
+#logoa{
+    text-decoration: none;
+    color:white;
+}
+#logoa:hover{
+    color: lightgreen;
+    transition: ease-in-out 0.5s;
+    text-shadow: 2px 0px 2px lightgreen;
+}
+header{
+    background-color: #36ba9c;
+    height: 650px;
+    padding-top: 100px;
+}
+.im{
+    width: 30%;
+    height: auto;
+    border-radius: 10%;
+    margin-left:35%;
+    margin-top: 30px;
+}
+.hak{
+    z-index: 2;
+    width: 50%;
+    padding:10px;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 90%;
+}
+.resimler{
+    width: 100%;
+}
+.resim{
+width: 70%;
+height: 70%;
+border-radius: 50%;
+margin-left:9%;
+padding:5%;
+}
+.rescon{
+   
+    display: inline-block;
+    float: left;
+width: 27%;
+height: 35%;
+box-shadow: 0px 2px 4px ;
+margin:3%;
+border-radius: 5px;
+}
+.rescon img{
+    display: block;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.about{
+    width: 100%;
+    height: 300px;
+    background-color: yellowgreen;
+}
+.sag{
+    padding: 10px;
+    display: inline-block;
+width: 35%;
+float:left;
+margin-left: 10%;
+margin-top: 100px;
+border:solid 3px rgba(230,230,230,1 );
+padding: 15px;
+border-radius: 20px;
+background-color: honeydew;
+box-shadow: 0px 2px 4px ;
+}
+
+.sol{
+    box-shadow: 0px 2px 4px ;
+    display: inline-block;
+    width: 35%;
+    float:left;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top: 100px;
+    border:solid 3px rgba(230,230,230,1 );
+    border-radius: 20px;
+    background-color: honeydew;
+}
