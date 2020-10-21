@@ -1,0 +1,77 @@
+-- MySQL sorguları --
+
+-- select * from deneme2.products
+ 
+ -- select id,name from deneme2.products // tüm elemanları getirme
+ 
+ -- select * from deneme2.products where price <1300 and pirce > 200 //fiyatı 1300den küçük ve 200den büyükleri getirme
+ 
+ -- select * from deneme2.products where price <1300 or price > 200 //fiyatı 1300den küçük veya 200den büyükleri getirme
+ 
+-- select price,name from deneme2.products where price <1300 and price > 300   //fiyatı 1300den küçük ve 200den büyüklerin ad ve fiyat bilgisi
+
+-- select price,name from deneme2.products where name="sedat"  //adı sedat olan sütünların ad ve fiyat bilgisi
+
+-- select * from deneme2.products where category IN ("telefon","bilg") //iki kategoriyi birden getirir
+
+-- select * from deneme2.products where category NOT IN ("telefon") //telefon olmayan kayıtlar gelir
+
+-- select * from deneme2.products where category LIKE ("%ele%") //aranan kriter string in içinde varsa getirir
+
+-- // %a  a ile biten demek  ||   a% a ile başlayan demek || _a% ikinci karakter a olan kayıtları getirir
+
+-- select * from deneme2.products order by price //fiyata göre artan sıralanmış halde hepsini getirir
+
+-- select * from deneme2.products order by price DESC // azalan sıralma için desc
+
+-- select * from deneme2.products order by category,price  //ilk categorye göre sıralanır ardından içlerinde fiyata göre
+
+-- select min(price) from deneme2.products // en düşük fiyatı getirir
+
+-- select max(price) from deneme2.products // en yüksek fiyatı getirir
+
+-- select * from deneme2.products order by price limit 1// limit x  limitin kaç üstten kaç tane eleman döndüreceğini belirler 
+ 
+ -- select * from deneme2.products order by price limit 1 // en ucuz ürünü döndürür
+ 
+-- select * from deneme2.products order by price desc limit 1 // en pahalı ürünü döndürür
+
+-- select count(*) from deneme2.products  // satır sayısını döndürür
+ 
+ -- select avg(price) from deneme2.products // fiyat ortalamasını döndürür
+ 
+-- select sum(price) from deneme2.products  // tüm fiyatların toplamını döndürür
+
+-- select name,length(name) from deneme2.products //length(name) satırlarının uzunluğunu bulur
+
+-- select name,left(name,3) from deneme2.products //left(name,3) name kolonundan soldan 3 karakteri döndürür
+
+-- select name,concat(left(name,3) , '...')from deneme2.products //concat(x,y) x ve y stringini birleştirir ve döndürür
+ 
+-- select name,upper(name) from deneme2.products // nameler büyük harfle döner
+
+-- select name,lower(name) from deneme2.products // nameler küçük harfle döner
+
+-- select name,replace(name,' ','-') from deneme2.products // name içindeki boşlukları - ile değiştirir
+
+-- select name,trim(name) from deneme2.products // baş ve sondaki boşlukları alır
+
+-- select distinct category from deneme2.products //disting tekrarlayan ifadeleri engeller
+
+-- select category ,avg(price) from deneme2.products group by category // group by gruplama yapar
+
+-- select category ,count(*) from deneme2.products group by category having count(*)>1 //listeler için sorgu yapar
+
+-- select category ,count(*) from deneme2.products group by category // categorylerde kaç eleman olduğu
+
+-- select * from deneme2.products
+
+-- INSERT  INTO deneme2.products (name,price,category,stock) values ("fatih2",50,"insan",10)
+
+-- Update deneme2.products set name="iphone 12" where id=3  // 3 numaralı id güncellenir
+
+-- SET SQL_SAFE_UPDATES = 0;// toplu islemlerde sql hata vermesini önler safe moddan çıkar
+
+-- Update deneme2.products set price=price*1.1   where category="insan"//insan kategorisindeki ürünlere %10 zam yapar
+
+-- DELETE from deneme2.products where id =7 // eleman silme
