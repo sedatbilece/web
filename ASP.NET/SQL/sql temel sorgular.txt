@@ -75,3 +75,6 @@
 -- Update deneme2.products set price=price*1.1   where category="insan"//insan kategorisindeki ürünlere %10 zam yapar
 
 -- DELETE from deneme2.products where id =7 // eleman silme
+
+--select orders.id,customer.name,orders.time,orders.adress from mydb.orders inner join mydb.customer 
+on orders.cosid=customer.id; //inner join iki tabloyu birleştirmek için şart sunar
